@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwind Project</title>
+        <!-- Font awesome link -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <!-- Tailwind Link -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+<body>
+    <nav id="navbar" class="flex justify-between items-center bg-white py-6 px-8 shadow">
+        <div class="flex items-center gap-2 cursor-pointer">
+            <img class="h-12 w-12" src="./assets/logo.png" alt="logo">
+            <h2 class="text-3xl">ToDesktop</h2>
+        </div>
+
+        <ul id="menulist" class="hidden lg:flex items-center gap-8">
+            <li><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Pricing</a></li>
+            <li><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Docs</a></li>
+            <li><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Changelog</a></li>
+            <li><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Blog</a></li>
+            <li><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Login</a></li>
+        </ul>
+
+        
+        <button class="hidden lg:flex items-center px-4 py-2 gap-3 border rounded-lg cursor-pointer hover:border-gray-500 transition">
+            <img src="./assets/buttonicon.svg" alt="">
+            <span class="text-lg font-semibold ">Electron Developer</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        
+
+        <div id="menu-btn" class="lg:hidden">
+            <button><i class="fa-solid fa-bars text-xl"></i></button>
+        </div>
+    </nav>
+
+    <div id="hero" class="bg-gradient-to-b from-gray-100 to-gray-0">
+        <div class="max-w-5xl mx-auto  px-8 py-10 h-full flex flex-col md:items-center md:text-center">
+
+            <div class="flex items-center gap-3 bg-yellow-100 w-fit px-3 py-1 rounded-sm shadow hover:shadow-md hover:-translate-y-0.5 transition ">
+                <div class="size-2 bg-yellow-700 rounded-full"></div> 
+                <span class="text-yellow-800 font-bold text-md">v0.28.0</span> <i class="fa-solid fa-arrow-right text-yellow-500"></i>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-5 mt-11">
+                <div class="flex items-center text-gray-500 text-xl gap-3">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Code optional</span>
+                </div>
+                <div class="flex items-center text-gray-500 text-xl gap-3">
+                    <i class="fa-regular fa-hand"></i>
+                    <span>Drag & drop builder</span>
+                </div>
+                <div class="flex items-center text-gray-500 text-xl gap-3">
+                    <i class="fa-solid fa-window-restore"></i>
+                    <span>Windows, Mac, Linux</span>
+                </div>
+            </div>
+
+            <h1 class="text-6xl md:text-8xl font-bold leading-20 md:leading-30 mb-10 md:mb-14 mt-14">Web app to desktop app in minutes</h1>
+
+            <p class="text-xl lg:text-2xl max-w-4/5 text-gray-600 font-medium mb-12">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+
+            <div id="hero-btns" class="flex flex-col lg:flex-row gap-5">
+                <button class="bg-blue-700 text-white text-xl font-bold py-4 px-6 rounded-lg hover:bg-blue-500 transition">Download now</button>
+                <button class="bg-white  text-gray-800 text-xl font-bold py-4 px-6 rounded-lg  border border-gray-500 hover:border-gray-900 transition">Read docs</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
