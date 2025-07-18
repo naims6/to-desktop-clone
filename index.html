@@ -10,7 +10,8 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
 <body>
-    <nav id="navbar" class="flex justify-between items-center bg-white py-6 px-8 shadow">
+    <nav id="navbar" class="flex justify-between items-center bg-white fixed top-0 left-0 w-full py-6 px-8 shadow">
+        <div id="overlay" class="hidden lg:hidden fixed top-22 left-0 w-full h-full  z-40 transition-all duration-1000"></div>
         <div class="flex items-center gap-2 cursor-pointer">
             <img class="h-12 w-12" src="./assets/logo.png" alt="logo">
             <h2 class="text-3xl">ToDesktop</h2>
@@ -23,21 +24,34 @@
             <li><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Blog</a></li>
             <li><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Login</a></li>
         </ul>
-
         
-        <button class="hidden lg:flex items-center px-4 py-2 gap-3 border rounded-lg cursor-pointer hover:border-gray-500 transition">
+        <button class="hidden lg:flex items-center px-4 py-2 gap-3 border rounded-lg cursor-pointer hover:border-gray-300 transition">
             <img src="./assets/buttonicon.svg" alt="">
             <span class="text-lg font-semibold ">Electron Developer</span>
             <i class="fa-solid fa-arrow-right"></i>
         </button>
         
 
-        <div id="menu-btn" class="lg:hidden">
-            <button><i class="fa-solid fa-bars text-xl"></i></button>
+        <div id="menu-btn" class="lg:hidden cursor-pointer p-2">
+            <button class="cursor-pointer"><i class="fa-solid fa-bars text-xl"></i></button>
         </div>
+        <!-- Small Device Menu -->
+         <ul id="menulist-mobile" class="opacity-0 hidden transition-opacity duration-300 z-50 lg:hidden absolute w-screen h-fit bg-gray-100 top-20 left-0 px-6 py-6 gap-1 shadow-md border-t">
+            <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2 " href="">Pricing</a></li>
+            <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Docs</a></li>
+            <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Changelog</a></li>
+            <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Blog</a></li>
+            <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Login</a></li>
+
+            <button class=" flex items-center w-fit px-4 py-2 mt-3 gap-3 border rounded-lg cursor-pointer hover:border-gray-500 transition">
+            <img src="./assets/buttonicon.svg" alt="">
+            <span class="text-lg font-semibold ">Electron Developer</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        </ul>
     </nav>
 
-    <div id="hero" class="bg-gradient-to-b from-gray-100 to-gray-0">
+    <div id="hero" class="h-screen bg-gradient-to-b from-gray-100 to-gray-0 pt-22">
         <div class="max-w-5xl mx-auto  px-8 py-10 h-full flex flex-col md:items-center md:text-center">
 
             <div class="flex items-center gap-3 bg-yellow-100 w-fit px-3 py-1 rounded-sm shadow hover:shadow-md hover:-translate-y-0.5 transition ">
@@ -71,5 +85,7 @@
 
         </div>
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
