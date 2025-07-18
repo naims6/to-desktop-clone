@@ -36,14 +36,14 @@
             <button class="cursor-pointer"><i class="fa-solid fa-bars text-xl"></i></button>
         </div>
         <!-- Small Device Menu -->
-         <ul id="menulist-mobile" class="opacity-0 hidden transition-opacity duration-300 z-50 lg:hidden absolute w-screen h-fit bg-gray-100 top-22 left-0 px-6 py-6 gap-1 shadow-md border-t">
+         <ul id="menulist-mobile" class="opacity-0 hidden transition-opacity duration-300 z-50 lg:hidden absolute w-screen max-h-[calc(100vh-64px)] bg-gray-100 top-22 left-0 px-6 py-6 gap-1 shadow-md border-t overflow-y-auto">
             <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2 " href="">Pricing</a></li>
             <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Docs</a></li>
             <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Changelog</a></li>
             <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Blog</a></li>
             <li class="bg-gray-100 hover:bg-gray-200 rounded-lg py-4 px-3"><a class="text-gray-700 font-bold hover:text-blue-700 text-lg transition px-2" href="">Login</a></li>
 
-            <button class=" flex items-center w-fit px-4 py-2 mt-3 gap-3 border rounded-lg cursor-pointer hover:border-gray-500 transition">
+            <button class=" flex items-center w-fit px-4 py-2 mt-3 mb-3 gap-3 border rounded-lg cursor-pointer hover:border-gray-500 transition">
             <img src="./assets/buttonicon.svg" alt="">
             <span class="text-lg font-semibold ">Electron Developer</span>
             <i class="fa-solid fa-arrow-right"></i>
@@ -289,7 +289,6 @@
                 
             </div>
         </div>
-        <div class="h-[1000px]"></div>
     </div>
 
     <script src="./app.js"></script>
