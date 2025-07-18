@@ -11,14 +11,14 @@ function openMenu() {
     if(isOpen) {
         menuList.classList.remove("hidden");
         overLay.classList.remove("hidden");
-        overLay.classList.add('backdrop-blur-sm', 'pointer-events-auto');
+        overLay.classList.add('backdrop-blur-sm', 'pointer-events-none');
         setTimeout(() => {
             menuList.classList.add("opacity-100");
             menuList.classList.remove("opacity-0");
         }, 10)
     } else {
         menuList.classList.add("hidden");
-        overLay.classList.remove('backdrop-blur-sm', 'pointer-events-auto');
+        overLay.classList.remove('backdrop-blur-sm', 'pointer-events-none');
         menuList.classList.remove("opacity-100");
         menuList.classList.add("opacity-0");
         setTimeout(() => {
