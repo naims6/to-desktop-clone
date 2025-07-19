@@ -10,7 +10,9 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
 <body>
+    <!-- overlay -->
     <div id="overlay" class="hidden lg:hidden fixed top-[88px] left-0 w-full h-full inset-0 z-40 transition-all duration-1000 backdrop-blur-sm pointer-events-none"></div>
+    <!-- Nav BAR -->
     <nav id="navbar" class="flex justify-between items-center bg-white fixed top-0 left-0 w-full py-6 px-8 shadow z-50">
         <div class="flex items-center gap-2 cursor-pointer">
             <img class="h-12 w-12" src="./assets/logo.png" alt="logo">
@@ -50,8 +52,8 @@
         </button>
         </ul>
     </nav>
-
-    <div id="hero" class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-0 pt-22">
+<!-- HERO SECTION DONE -->
+    <section id="hero" class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-0 pt-22">
         <div id="hero-container" class="max-w-5xl mx-auto  px-8 py-10 h-full flex flex-col md:items-center md:text-center">
 
             <div class="flex items-center gap-3 bg-yellow-100 w-fit px-3 py-1 rounded-sm shadow hover:shadow-md hover:-translate-y-0.5 transition ">
@@ -74,9 +76,9 @@
                 </div>
             </div>
 
-            <h1 class="text-5xl md:text-8xl font-bold leading-20 md:leading-30 mb-10 md:mb-14 mt-14">Web app to desktop app in minutes</h1>
+            <h1 class="text-5xl md:text-8xl font-bold leading-16 md:leading-30 mb-8 lg:mb-10 md:mb-14 mt-14">Web app to desktop app in minutes</h1>
 
-            <p class="text-xl lg:text-2xl max-w-4/5 text-gray-600 font-medium mb-12">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+            <p class="text-xl lg:text-2xl w-full lg:max-w-4/5 text-gray-600 font-medium mb-8 lg:mb-12">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
 
             <div id="hero-btns" class="flex flex-col lg:flex-row gap-5">
                 <button class="bg-blue-700 text-white text-xl font-bold py-4 px-6 rounded-lg hover:bg-blue-500 transition">Download now</button>
@@ -289,7 +291,178 @@
                 
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Step by Step Secetion Our Service -->
+    <section id="STEP" class="flex flex-col gap-6 max-w-7xl mx-auto mt-20">
+        <h1 class="text-5xl font-bold mb-8 mx-8">How it works</h1>
+
+        <!-- step 1 -->
+         <div id="step1" class="mx-8">
+             <div class="flex flex-col lg:flex-row gap-5 items-center justify-between bg-gray-50 border border-gray-300 rounded-xl py-10 px-6 lg:px-10 mb-6">
+                <div class="flex flex-col max-w-full lg:max-w-1/2">
+                    <span class="bg-yellow-50 text-yellow-900 border border-yellow-600 w-fit font-bold py-1 px-3 rounded-lg">Step 1</span>
+
+                    <h1 class="text-4xl font-bold my-10">Bootstrap straight from your web app</h1>
+
+                    <p class="text-xl mb-8">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+
+                    <ul class="grid grid-cols-2">
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Customisable menus</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Menubar/tray menus</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Launch on startup</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Offline support</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Tabs (Mac only)</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img src="./assets/Screenshot_3.png" alt="">
+                </div>
+            </div>
+         </div>
+
+         <div id="step2" class="mx-8">
+             <div class="flex flex-col lg:flex-row gap-5 items-center justify-between bg-gray-50 border border-gray-300 rounded-xl py-10 px-10 mb-6">
+                <div class="flex flex-col max-w-full lg:max-w-1/2">
+                    <span class="bg-yellow-50 text-yellow-900 border border-yellow-600 w-fit font-bold py-1 px-3 rounded-lg">Step 2</span>
+
+                    <h1 class="text-4xl font-bold my-10">Add desktop code to customise your web app</h1>
+
+                    <p class="text-xl mb-8">No need to create a new repository, just add code from our desktop APIs to your codebase and get access to system level functionality.</p>
+
+                    <ul class="grid grid-cols-2">
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Native notifications</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Global keyboard shortcuts</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Application menu</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Context menu</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Dock/Icon</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Isolated browser views</a>
+                        </li>
+
+                         <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">File system access</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">…plus more APIs in our docs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img src="./assets/Screenshot_1.png" alt="">
+                </div>
+            </div>
+         </div>
+
+         <div id="step3" class="mx-8">
+             <div class="flex flex-col lg:flex-row gap-5 items-center justify-between bg-gray-50 border border-gray-300 rounded-xl py-10 px-10 mb-6">
+                <div class="flex flex-col max-w-full lg:max-w-1/2">
+                    <span class="bg-yellow-50 text-yellow-900 border border-yellow-600 w-fit font-bold py-1 px-3 rounded-lg">Step 3</span>
+
+                    <h1 class="text-4xl font-bold my-10">Publish 🚀</h1>
+
+                    <p class="text-xl mb-8">One-click will publish your desktop app to your customers and give you a download link to put on your website.</p>
+
+                    <ul class="grid grid-cols-2">
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Super-fast global CDN</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Download links on your domain</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Magic universal links</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Download analytics</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Manage version numbers</a>
+                        </li>
+
+                        <li class="flex gap-2 mb-5">
+                            <i class="fa-solid fa-check"></i>
+                            <a href="#" class="border-b border-gray-400/70 hover:border-gray-700">Native installers for all platforms</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img src="./assets/Screenshot_2.png" alt="">
+                </div>
+            </div>
+         </div>
+    </section>
+
+
+
+
+    
+
+
+
+
+
+
 
     <script src="./app.js"></script>
 </body>
