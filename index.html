@@ -614,14 +614,84 @@
             </div>
             <div class="">
                 <h1 class="h-[280px] md:h-[550]"></h1>
-                <img  class="w-[350px] md:w-[550px] max-w-full absolute bottom-0 right-0" src="./assets/asset 47.png" alt="">
+                <img  class="w-[350px] md:w-[550px] max-w-9/10 absolute bottom-0 right-0" src="./assets/asset 47.png" alt="">
             </div>
         </div>       
      </section>
 
-     <section id="package" class="max-w-7xl mx-auto mt-20">
+     <section id="package-section" class="max-w-7xl mx-auto mt-20">
+        <div class="flex flex-col md:flex-row gap-5 justify-between items-center md:items-end">
+            <h1 class="text-4xl md:text-5xl font-bold mb-8 mx-8">Choose a plan that fits <br> your needs</h1>
+            <div class="bg-gray-100 h-fit rounded-xl">
+                <button class="py-4 px-10 font-semibold">Monthly</button>
+                <button class="bg-white shadow-lg px-5 py-3 rounded-xl font-semibold">Yearly <span class="bg-blue-200 text-blue-800 rounded-xl py-1 px-3 ml-2 font-bold">-20%</span> </button>
+            </div>
+        </div>
 
+        <div id="3package" class="flex flex-col md:flex-row gap-6 mt-10 mx-5">
+            <div class="flex flex-col flex-1 bg-gray-50 border border-gray-100 rounded-xl shadow py-6 px-7">
+                <h1 class="text-3xl font-semibold">Free</h1>
+                <p class="text-gray-600 text-xl mb-7 mt-2">For personal use or testing your app before deploying to customers.</p>
+                <span class="text-gray-900 font-bold text-xl">Key Features</span>
+                <ul class="mt-5">
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i> Free for Personal Use</li>
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i> Run App Locally</li>
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-xmark"></i> No Public Distribution</li>
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-xmark"></i> No Native Installers</li>
+                </ul>
+                <button class="bg-white border border-gray-300 w-full text-blue-700 font-bold py-4 rounded-xl mt-10">Get Started</button>
+            </div>
+
+             <div class="flex flex-col flex-1 bg-gray-50 border border-gray-100 rounded-xl shadow py-6 px-7">
+                <h1 class="text-3xl font-semibold">Essential</h1>
+                <p class="text-gray-600 text-xl mb-7 mt-2">For simple desktop apps.</p>
+                <span class="mb-7 text-xl"><b class="text-2xl">$100</b>/month</span>
+                <span class="text-gray-900 font-bold text-xl">Key Features</span>
+                <ul class="mt-5">
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i> Windows, Mac & Linux</li>
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i>Automatic Updates</li>
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i> Native Installers</li>
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i>Email/chat support</li>
+                </ul>
+                <button class="bg-white border border-gray-300 w-full text-blue-700 font-bold py-4 rounded-xl mt-10">Get Started</button>
+            </div>
+
+              <div class="flex flex-col flex-1 bg-gray-50 border border-gray-100 rounded-xl shadow py-6 px-7">
+                <h1 class="text-3xl font-semibold">Proffesional</h1>
+                <p class="text-gray-600 text-xl mb-7 mt-2">For sophisticated desktop apps.</p>
+                <span class="mb-7 text-xl"><b class="text-2xl">$240</b>/month</span>
+                <span class="text-gray-900 font-bold text-xl">Everything in Essential Plus</span>
+                <ul class="mt-5">
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i> Branded Download Links</li>
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i> Analytics</li>
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i> Access to Plugins</li>
+                    <li class="flex items-center gap-3 text-gray-600 text-lg font-semibold mb-3"><i class="fa-solid fa-check"></i> Access to Restricted API</li>
+                </ul>
+                <button class="bg-blue-600 border border-gray-300 w-full text-white font-bold py-4 rounded-xl mt-10">Get Started</button>
+            </div>
+        </div>
      </section>
+
+     <footer class="max-w-7xl mx-auto mt-20 ">
+        <div class="bg-zinc-100 border border-gray-300 flex flex-col md:flex-row justify-between items-center gap-6 rounded-lg p-6 md:p-12">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="">
+                <p class="text-2xl">ToDesktop</p>
+            </div>
+            <div class="flex items-center gap-10">
+                <a href="" class="text-gray-700">Documentation</a>
+                <i class="fa-brands fa-github text-gray-700"></i>
+                <i class="fa-brands fa-twitter text-gray-700"></i>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 justify-center items-center my-6 md:my-10">
+            <span class="text-gray-800 font-medium">A Y Combinator company.</span>
+            <span class="text-gray-500">© 2025 ToDesktop, Inc. All rights reserved.</span>
+        </div>
+       
+     </footer>
+
+
     
 
 
