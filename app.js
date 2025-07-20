@@ -29,4 +29,36 @@ function openMenu() {
 menuBtn.addEventListener("click", openMenu)
 
 
+// Faq Section
+
+const faqQuestion = document.querySelectorAll(".faq-question");
+const faqQuestionIcon = document.querySelectorAll(".faq-question i");
+const faqAnswer = document.querySelector(".faq-answer");
+
+
+faqQuestion.forEach((question) => {
+    question.addEventListener("click", () => {
+        const answer = question.nextElementSibling;
+        if(answer.classList.contains("max-h-0")) {
+            answer.classList.remove("max-h-0");
+            answer.classList.add("max-h-96", "pb-3");
+
+            faqQuestionIcon.forEach((icon) => {
+                icon.classList.add("transform", "rotate-180");
+            })
+        } else {
+            answer.classList.add("max-h-0");
+            answer.classList.remove("max-h-96", "pb-3");
+
+            faqQuestionIcon.forEach((icon) => {
+                icon.classList.remove("transform", "rotate-180");
+            })
+        }
+        
+    }) 
+})
+
+
+
+
 
